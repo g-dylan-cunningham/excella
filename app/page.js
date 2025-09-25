@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-orange-900 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
-            <h1 className="text-7xl md:text-8xl font-bold mb-2 font-russo-one" style={{color: '#00B4F4'}}>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-2 font-russo-one" style={{color: '#00B4F4'}}>
               excella
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
