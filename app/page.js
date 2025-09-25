@@ -1,102 +1,146 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-orange-900 text-white">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <div className="text-center">
+            <h1 className="text-7xl md:text-8xl font-bold mb-2 font-russo-one" style={{color: '#00B4F4'}}>
+              excella
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-gray-200">
+              Apache Junction's Premier Airstream & RV Specialists
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                Get a Quote
+              </button>
+              <button className="border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-800 font-bold py-4 px-8 rounded-full transition-all">
+                View Services
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16 text-slate-800">
+            Our Specialties
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <div id="main-experts" className="group text-center p-8 rounded-2xl border-2 border-gray-200 hover:border-orange-300 transition-all hover:shadow-lg relative overflow-hidden" style={{backgroundImage: 'url(/excella-airstream.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div className="absolute inset-0 bg-black/40 transition-opacity duration-700 group-hover:bg-black/0"></div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-orange-100/90 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-12 h-8 bg-orange-500 rounded-full relative">
+                    <div className="absolute top-1 left-1 w-10 h-6 bg-white rounded-full opacity-30"></div>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-white">Airstream Experts</h3>
+                <p className="text-gray-200 leading-relaxed">
+                  Specialized service for iconic Airstream trailers. From vintage restorations to modern maintenance.
+                </p>
+              </div>
+            </div>
+
+            <div id="main-bodywork" className="group text-center p-8 rounded-2xl border-2 border-gray-200 hover:border-orange-300 transition-all hover:shadow-lg relative overflow-hidden" style={{backgroundImage: 'url(/excella-airstream-body.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div className="absolute inset-0 bg-black/40 transition-opacity duration-700 group-hover:bg-black/0"></div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-orange-100/90 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-10 h-10 bg-orange-500 rounded-lg"></div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-white">Bodywork</h3>
+                <p className="text-gray-200 leading-relaxed">
+                  Professional collision repair, dent removal, and custom bodywork for all RV makes and models.
+                </p>
+              </div>
+            </div>
+
+            <div id="main-systems" className="group text-center p-8 rounded-2xl border-2 border-gray-200 hover:border-orange-300 transition-all hover:shadow-lg relative overflow-hidden" style={{backgroundImage: 'url(/excella-electrical.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div className="absolute inset-0 bg-black/40 transition-opacity duration-700 group-hover:bg-black/0"></div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-orange-100/90 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-8 h-8 bg-orange-500 rounded-full relative">
+                    <div className="absolute top-1 left-1 w-2 h-2 bg-white rounded-full"></div>
+                    <div className="absolute bottom-1 right-1 w-2 h-2 bg-white rounded-full"></div>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-white">Systems Repair</h3>
+                <p className="text-gray-200 leading-relaxed">
+                  Electrical, plumbing, HVAC, and appliance repair to keep your RV running smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Contact Info */}
+      <section className="py-20 bg-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-slate-800">
+                Located in Apache Junction, AZ
+              </h2>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Excella is an RV repair service specializing in Airstreams. We are factory trained and perform everything from basic maintenance to body repairs and segment replacement. We have an East Valley Location and perform many repairs onsite. This means no trips to the dealership, and no middle man. You are met with a knowledgeable technician who can meet your expectations and keep your coach adventure ready.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">📍</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-800">Apache Junction, Arizona</p>
+                    <p className="text-gray-600">Serving the Greater Phoenix Area</p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">⏰</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-800">Monday - Friday: 7:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">Saturday: 8:00 AM - 4:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-orange-200">
+              <h3 className="text-2xl font-bold mb-6 text-center text-slate-800">
+                Ready to Get Started?
+              </h3>
+              <p className="text-gray-600 text-center mb-8">
+                Contact us today for a free estimate on your RV repair needs.
+              </p>
+              <div className="space-y-4">
+                <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-full transition-all">
+                  Call Now: (480) 555-0123
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-orange-400 mb-4">Excella RV Repair</h3>
+            <p className="text-gray-400 mb-4">
+              Professional RV repair services in Apache Junction, Arizona
+            </p>
+            <p className="text-gray-500 text-sm">
+              © 2024 Excella RV Repair. All rights reserved.
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
