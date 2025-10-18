@@ -18,17 +18,17 @@ export default function Home() {
                 priority
               />
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            <p className="text-xl md:text-2xl mb-4 text-gray-200">
               Phoenix Valley's Premier Airstream & RV Specialists
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
                 Get a Quote
               </button>
               <button className="border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-800 font-bold py-4 px-8 rounded-full transition-all">
                 View Services
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -128,9 +128,9 @@ export default function Home() {
                 Contact us today for a free estimate on your RV repair needs.
               </p>
               <div className="space-y-4">
-                <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-full transition-all">
+                <a href="tel:4806306095" className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-full transition-all block text-center">
                   Call Now: 480-630-6095
-                </button>
+                </a>
               </div>
             </div>
           </div>

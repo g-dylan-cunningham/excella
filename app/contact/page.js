@@ -143,7 +143,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg">Phone</h3>
-                    <p className="text-gray-700">480-630-6095</p>
+                    <p className="text-gray-700">
+                      <a href="tel:4806306095" className="text-orange-600 hover:text-orange-700 hover:underline">
+                        480-630-6095
+                      </a>
+                    </p>
                     <p className="text-sm text-gray-600">Available by Appointment</p>
                   </div>
                 </div>
@@ -165,7 +169,13 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg">Emergency Mobile Service</h3>
-                    <p className="text-gray-700">Call or Text Rob: 480-630-6095</p>
+                    <p className="text-gray-700">
+                      <span className="text-gray-600">Call or </span>
+                      <a href="sms:4806306095" className="text-orange-600 hover:text-orange-700 hover:underline">
+                        Text
+                      </a>
+                      <span className="text-gray-600"> Rob</span>
+                    </p>
                     <p className="text-sm text-gray-600">Available by Appointment</p>
                   </div>
                 </div>
@@ -174,7 +184,7 @@ export default function Contact() {
               {/* Service Areas */}
               <div className="bg-orange-50 p-6 rounded-2xl">
                 <h3 className="font-bold text-slate-800 text-lg mb-4">Service Areas</h3>
-                <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                <div className="grid grid-cols-2 gap-2 text-sm text-gray-700 mb-4">
                   <span>• Apache Junction</span>
                   <span>• Mesa</span>
                   <span>• Phoenix</span>
@@ -184,6 +194,14 @@ export default function Contact() {
                   <span>• Gold Canyon</span>
                   <span>• Queen Creek</span>
                 </div>
+                <aside className="bg-orange-100 border-l-4 border-orange-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-slate-700 italic">
+                    <strong>Out of the Phoenix Valley?</strong> We travel for larger jobs. 
+                    <a href="tel:4806306095" className="text-orange-600 hover:text-orange-700 hover:underline ml-1">
+                      Call Rob
+                    </a> to discuss.
+                  </p>
+                </aside>
               </div>
             </div>
 
