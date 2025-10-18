@@ -20,7 +20,7 @@ const russoOne = Russo_One({
 
 export const metadata = {
   title: "Excella RV Repair - Apache Junction, AZ",
-  description: "Professional RV repair services in Apache Junction, Arizona. Specializing in Airstream trailers, bodywork, and systems repair.",
+  description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
   icons: {
     icon: '/favicon.ico',
   },

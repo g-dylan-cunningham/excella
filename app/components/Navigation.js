@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -35,9 +37,9 @@ export default function Navigation() {
             <Image 
               src="/excella-icon.png" 
               alt="Excella RV Repair" 
-              width={40} 
-              height={40}
-              className="w-8 h-8 sm:w-10 sm:h-10"
+              width={120} 
+              height={120}
+              className="w-18 h-18 sm:w-15 sm:h-15"
             />
 
           </Link>
@@ -62,13 +64,14 @@ export default function Navigation() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden flex flex-col justify-center items-center w-12 h-12 space-y-1.5 p-2 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-600 transition-all"
+            className="md:hidden flex justify-center items-center w-12 h-12 p-2 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-600 transition-all"
             aria-label="Toggle menu"
             style={{ minWidth: '48px', minHeight: '48px' }}
           >
-            <span className={`block w-6 h-1 bg-orange-400 transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-            <span className={`block w-6 h-1 bg-orange-400 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block w-6 h-1 bg-orange-400 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            <FontAwesomeIcon 
+              icon={isMenuOpen ? faX : faBars} 
+              className="text-orange-400 text-xl transition-all duration-300"
+            />
           </button>
           
 

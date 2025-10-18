@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -6,11 +8,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-2 font-russo-one" style={{color: '#00B4F4'}}>
-              excella
+            <h1 className="mb-2">
+              <Image 
+                src="/excella-logo.png" 
+                alt="Excella RV Repair - Phoenix Valley's Premier Airstream & RV Specialists" 
+                width={400} 
+                height={120}
+                className="w-auto h-16 sm:h-20 md:h-20 lg:h-20 mx-auto"
+                priority
+              />
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Apache Junction's Premier Airstream & RV Specialists
+              Phoenix Valley's Premier Airstream & RV Specialists
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
@@ -55,7 +64,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white">Bodywork</h3>
                 <p className="text-gray-200 leading-relaxed">
-                  Professional collision repair, dent removal, and custom bodywork for all RV makes and models.
+                  Professional collision repair, segment replacement, and custom modifications for all Airstream Models
                 </p>
               </div>
             </div>
@@ -105,8 +114,8 @@ export default function Home() {
                     <span className="text-white font-bold">⏰</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-slate-800">Monday - Friday: 7:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 8:00 AM - 4:00 PM</p>
+                    <p className="font-semibold text-slate-800">Available by Appointment</p>
+                    <p className="text-gray-600">Emergency Mobile Service Available</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +129,7 @@ export default function Home() {
               </p>
               <div className="space-y-4">
                 <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-full transition-all">
-                  Call Now: (480) 555-0123
+                  Call Now: 480-630-6095
                 </button>
               </div>
             </div>
@@ -134,7 +143,7 @@ export default function Home() {
           <div className="text-center">
             <h3 className="text-2xl font-bold text-orange-400 mb-4">Excella RV Repair</h3>
             <p className="text-gray-400 mb-4">
-              Professional RV repair services in Apache Junction, Arizona
+              Professional RV repair services in the Phoenix Valley
             </p>
             <p className="text-gray-500 text-sm">
               © 2024 Excella RV Repair. All rights reserved.

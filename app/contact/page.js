@@ -91,8 +91,8 @@ export default function Contact() {
             <div className="mt-12 pt-8 border-t border-gray-200">
               <p className="text-gray-600 mb-4">Need immediate assistance?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:4805550123" className="text-orange-600 font-bold text-lg hover:underline">
-                  📞 (480) 555-0123
+                <a href="tel:4806306095" className="text-orange-600 font-bold text-lg hover:underline">
+                  📞 480-630-6095
                 </a>
                 <span className="text-gray-400 hidden sm:block">|</span>
                 <span className="text-gray-600">
@@ -143,8 +143,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg">Phone</h3>
-                    <p className="text-gray-700">(480) 555-0123</p>
-                    <p className="text-sm text-gray-600">Mon-Fri: 7AM-6PM, Sat: 8AM-4PM</p>
+                    <p className="text-gray-700">480-630-6095</p>
+                    <p className="text-sm text-gray-600">Available by Appointment</p>
                   </div>
                 </div>
 
@@ -164,9 +164,9 @@ export default function Contact() {
                     <span className="text-white text-xl font-bold">⚡</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-800 text-lg">Emergency Service</h3>
-                    <p className="text-gray-700">24/7 Emergency Roadside</p>
-                    <p className="text-sm text-gray-600">Additional charges may apply</p>
+                    <h3 className="font-bold text-slate-800 text-lg">Emergency Mobile Service</h3>
+                    <p className="text-gray-700">Call or Text Rob: 480-630-6095</p>
+                    <p className="text-sm text-gray-600">Available by Appointment</p>
                   </div>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-orange-500 focus:outline-none transition-colors"
-                    placeholder="(480) 555-0123"
+                    placeholder="480-630-6095"
                   />
                 </div>
 
@@ -281,10 +281,10 @@ export default function Contact() {
             Our experienced technicians can diagnose any RV issue. Give us a call for expert advice.
           </p>
           <a
-            href="tel:4805550123"
+            href="tel:4806306095"
             className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105"
           >
-            Call Now: (480) 555-0123
+            Call Now: 480-630-6095
           </a>
         </div>
       </section>

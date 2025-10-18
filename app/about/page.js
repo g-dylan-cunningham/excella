@@ -22,17 +22,13 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-slate-800">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded in the heart of Apache Junction, Excella RV Repair was born from a passion for the RV lifestyle
-                and the iconic Airstream trailers that represent freedom on the open road.
+              At our shop, we specialize in expert collision repair, underbelly restoration, and precise panel replacement, ensuring every vehicle leaves in top condition.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our team combines decades of experience with modern techniques to provide exceptional service for all
-                types of recreational vehicles. We understand that your RV isn't just a vehicle—it's your home away from home,
-                your adventure companion, and often, your retirement dream.
+              With a passion for craftsmanship and attention to detail, we also offer custom modifications that bring your vision to life. Our services extend to 12V and 110V electrical work, solar system installations, and lithium battery upgrades, helping you stay powered and connected wherever the road takes you.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Located in the beautiful Sonoran Desert, we specialize in repairs that address the unique challenges of
-                desert RVing, from extreme heat damage to dust infiltration and everything in between.
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              We’re also skilled in maintaining and upgrading fresh water and waste systems, water heaters, and leak detection and repair—keeping your setup efficient, reliable, and adventure-ready.
               </p>
             </div>
             <div className="relative">
