@@ -19,7 +19,7 @@ const russoOne = Russo_One({
 });
 
 export const metadata = {
-  title: "Excella RV Repair - Apache Junction, AZ",
+  title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
   description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
   icons: {
     icon: '/favicon.ico',

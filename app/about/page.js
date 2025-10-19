@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "About Excella RV Repair | Phoenix Valley Airstream Specialists",
+  description: "Learn about Excella RV Repair - Phoenix Valley's premier Airstream and RV repair specialists with factory training and mobile service.",
+};
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">

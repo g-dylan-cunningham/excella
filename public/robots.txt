@@ -1,0 +1,16 @@
+# robots.txt for Excellar RV (production)
+
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /drafts/
+Disallow: /api/
+Disallow: /internal/
+Disallow: /_next/            # runtime assets; crawlers shouldn't index
+Allow: /                      # everything else OK
+
+# Helpful but optional:
+# Crawl-delay: 5             # ignored by Google; some bots respect it
+
+# Point bots to your sitemap(s)
+Sitemap: https://excellarv.com/sitemap.xml
