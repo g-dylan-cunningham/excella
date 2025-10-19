@@ -1,6 +1,31 @@
 export const metadata = {
   title: "About Excella RV Repair | Phoenix Valley Airstream Specialists",
   description: "Learn about Excella RV Repair - Phoenix Valley's premier Airstream and RV repair specialists with factory training and mobile service.",
+  alternates: {
+    canonical: "https://excellarv.com/about",
+  },
+  openGraph: {
+    title: "About Excella RV Repair | Phoenix Valley Airstream Specialists",
+    description: "Learn about Excella RV Repair - Phoenix Valley's premier Airstream and RV repair specialists with factory training and mobile service.",
+    url: "https://excella-rv.com/about",
+    siteName: "Excella RV Repair",
+    images: [
+      {
+        url: "/excella-logo.png",
+        width: 400,
+        height: 120,
+        alt: "Excella RV Repair Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Excella RV Repair | Phoenix Valley Airstream Specialists",
+    description: "Learn about Excella RV Repair - Phoenix Valley's premier Airstream and RV repair specialists with factory training and mobile service.",
+    images: ["/excella-logo.png"],
+  },
 };
 
 export default function About() {
