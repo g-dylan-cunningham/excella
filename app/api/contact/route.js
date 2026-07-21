@@ -3,13 +3,13 @@ import { v4 as uuidv4 } from "uuid";
 export async function POST(request) {
   try {
     const data = await request.json();
-    const { name, email, message } = data;
+    const { name, phone, email, message } = data;
     const id = uuidv4();
     const received = new Date().toLocaleString();
     const gasApiUrl = process.env.GAS_API_URL;
 
     // Prepare payload for Google Apps Script
-    const payload = { id, name, email, message, received };
+    const payload = { id, name, phone, email, message, received };
 
     // Send POST request to Google Apps Script
     const gasRes = await fetch(gasApiUrl, {
@@ -32,4 +32,4 @@ export async function POST(request) {
       { status: 400, headers: { "Content-Type": "application/json" } }
     );
   }
-} 
+}

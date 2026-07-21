@@ -38,7 +38,14 @@ export default function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(
-          { id, name: formData.name, email: formData.email, message: formData.note, received }
+          {
+            id,
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            message: formData.note,
+            received
+          }
         ),
       });
 

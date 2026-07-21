@@ -5,6 +5,7 @@
  * Columns expected in the spreadsheet:
  * - id: A unique identifier for the submission
  * - name: The submitter's name
+ * - phone: The submitter's phone number
  * - email: The submitter's email address
  * - message: The content of the submission
  * - received: Timestamp when the submission was received
@@ -53,6 +54,7 @@ function doPost(e) {
       const data = {
             id: '141234123',
             name: 'test',
+            phone: '480-555-0100',
             email: 'testemail',
             'message': 'message',
             'timestamp': new Date().toString(),
@@ -87,6 +89,7 @@ function doPost(e) {
     var rowData = [
       data.id || "",          // Use empty string if id is not provided
       data.name || "",        // Use empty string if name is not provided
+      data.phone || "",       // Use empty string if phone is not provided
       data.email || "",       // Use empty string if email is not provided
       data.message || "",     // Use empty string if message is not provided
       timestamp               // Current timestamp
@@ -157,6 +160,7 @@ function testAppendRow() {
     var testData = {
       id: "test-" + new Date().getTime(),
       name: "Test User",
+      phone: "480-555-0100",
       email: "test@example.com",
       message: "This is a test submission from the script editor."
     };
@@ -174,6 +178,7 @@ function testAppendRow() {
     var rowData = [
       testData.id,
       testData.name,
+      testData.phone,
       testData.email,
       testData.message,
       timestamp
