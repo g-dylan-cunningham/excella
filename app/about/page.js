@@ -7,7 +7,7 @@ export const metadata = {
   openGraph: {
     title: "About Excella RV Repair | Phoenix Valley Airstream Specialists",
     description: "Learn about Excella RV Repair - Phoenix Valley's premier Airstream and RV repair specialists with factory training and mobile service.",
-    url: "https://excella-rv.com/about",
+    url: "https://excellarv.com/about",
     siteName: "Excella RV Repair",
     images: [
       {

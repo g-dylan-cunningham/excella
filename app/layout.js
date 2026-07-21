@@ -19,6 +19,7 @@ const russoOne = Russo_One({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://excellarv.com"),
   title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
   description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
   icons: {
@@ -30,7 +31,7 @@ export const metadata = {
   openGraph: {
     title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
     description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
-    url: "https://excella-rv.com",
+    url: "https://excellarv.com",
     siteName: "Excella RV Repair",
     images: [
       {

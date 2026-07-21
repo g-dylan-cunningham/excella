@@ -6,7 +6,6 @@ Disallow: /dashboard/
 Disallow: /drafts/
 Disallow: /api/
 Disallow: /internal/
-Disallow: /_next/            # runtime assets; crawlers shouldn't index
 Allow: /                      # everything else OK
 
 # Helpful but optional:

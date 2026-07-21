@@ -1,13 +1,13 @@
 export const metadata = {
   title: "Contact Excella RV Repair | Mobile Service in Phoenix Valley",
-  description: "Contact Excella RV Repair | Mobile Service in Phoenix Valley",
+  description: "Contact Excella RV Repair for mobile RV service in Phoenix Valley. Call or text Rob at 480-630-6095 for emergency service and appointments.",
   alternates: {
     canonical: "https://excellarv.com/contact",
   },
   openGraph: {
     title: "Contact Excella RV Repair | Mobile Service in Phoenix Valley",
     description: "Contact Excella RV Repair for mobile RV service in Phoenix Valley. Call or text Rob at 480-630-6095 for emergency mobile service and appointments.",
-    url: "https://excella-rv.com/contact",
+    url: "https://excellarv.com/contact",
     siteName: "Excella RV Repair",
     images: [
       {
