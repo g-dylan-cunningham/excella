@@ -13,6 +13,7 @@ export default function Navigation() {
 
   const navItems = [
     { href: '/', label: 'Home' },
+    { href: '/airstream-collision-repair-phoenix', label: 'Collision Repair' },
     { href: '/about', label: 'About Us' },
     { href: '/contact', label: 'Contact' },
   ];

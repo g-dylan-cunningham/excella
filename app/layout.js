@@ -20,7 +20,7 @@ const russoOne = Russo_One({
 
 export const metadata = {
   metadataBase: new URL("https://excellarv.com"),
-  title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
+  title: "Airstream Repair Phoenix AZ | Collision & Segment Replacement | Excella RV",
   description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
   icons: {
     icon: '/favicon.ico',
@@ -29,7 +29,7 @@ export const metadata = {
     canonical: "https://excellarv.com/",
   },
   openGraph: {
-    title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
+    title: "Airstream Repair Phoenix AZ | Collision & Segment Replacement | Excella RV",
     description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
     url: "https://excellarv.com",
     siteName: "Excella RV Repair",
@@ -46,7 +46,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile RV Repair in Phoenix | AC, Roof & Electrical | Excella RV",
+    title: "Airstream Repair Phoenix AZ | Collision & Segment Replacement | Excella RV",
     description: "Professional RV repair services in the Phoenix Valley. Specializing in Airstream trailers, bodywork, and systems repair.",
     images: ["/excella-logo.png"],
   },

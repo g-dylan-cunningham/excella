@@ -15,6 +15,11 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/airstream-collision-repair-phoenix`,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/contact`,
       changeFrequency: 'monthly',
       priority: 0.6,

@@ -18,8 +18,12 @@ export default function Home() {
                 priority
               />
             </h1>
-            <p className="text-xl md:text-2xl mb-4 text-gray-200">
-              Phoenix Valley's Premier Airstream & RV Specialists
+            <p className="text-xl md:text-2xl mb-6 text-gray-200">
+              Arizona's Airstream Repair & Collision Specialists
+            </p>
+
+            <p className="text-lg md:text-xl mb-0 text-gray-300">
+              Factory-trained Airstream service specializing in aluminum segment replacement, collision repair, insurance repairs, maintenance and upgrades. Located in Apache Junction and serving Airstream owners throughout Arizona and the Southwest.
             </p>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
